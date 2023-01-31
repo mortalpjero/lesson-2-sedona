@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Оставить отзыв</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="City of Sedona">
+    </a>
+    <nav class="nav-main">
+      <ul class="nav-main__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="gallery.html">Фото и Видео</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="button site-list--toggle"></button>
+    <button type="button" class="button site-list--close"></button>
+
+    <section class="welcoming">
+      <div class="welcoming__logo">
+        <img src="img/text-sedona.svg" width="282" height="49" alt="Sedona Logo">
+      </div>
+    </section>
+  </header>
+
+  <main class="page-main">
+    <h2 class="visually-hidden">Оставить отзыв</h2>
+
+    <div class="review__description">
+      <h3 class="heading">
+        Оставьте свой отзыв
+      </h3>
+      <p>
+        Помогите нашим отелям стать лучше!<br>
+        Оставьте отзыв о них, а также о<br>
+        посещенных вами<br>
+        достопримечательностях
+      </p>
+    </div>
+
+    <section>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="form">
+          <legend class="form__legend">Представьтесь:</legend>
+          <ul class="form-info__list">
+            <li class="form-info__item">
+              <label class="form__label" for="reviewer-name">Имя<span>&#42</span>:</label>
+              <input class="form__text-input" type="text" name="reviewer-name" id="reviewer-name" placeholder="Пётр">
+            </li>
+            <li class="form-info__item">
+              <label class="form__label" for="reviewer-surename">Фамилия<span>&#42</span>:</label>
+              <input class="form__text-input" type="text" name="reviewer-surename" id="reviewer-surename" placeholder="Иванов">
+            </li>
+            <li class="form-info__item">
+              <label class="form__label" for="reviewer-second-name">Отчество<span>&#42</span>:</label>
+              <input class="form__text-input" type="text" name="reviewer-second-name" id="reviewer-second-name" placeholder="Александрович">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form">
+          <legend class="form__legend">Контактная Информация:</legend>
+          <ul class="form-contacts__list">
+            <li class="form-contacts__item--phone">
+              <label class="form__label" for="reviewer-phone">Контактный телефон<span>&#42</span>:</label>
+              <input class="form__phone-input" type="tel" name="reviewer-phone" id="reviewer-phone" placeholder="Введите телефон">
+            </li>
+            <li class="form-contacts__item--email">
+              <label class="form__label" for="reviewer-email">Электронная почта<span>&#42</span>:</label>
+              <input class="form__email-input" type="email" name="reviewer-email" id="reviewer-email" placeholder="Введите e-mail">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form">
+          <legend class="form__legend">Ваше общее впечатление:</legend>
+          <ul class="form-mood__list">
+            <li class="form-mood__item">
+              <input class="form__radio-input" type="radio" name="mood" value="positive" id="positive-mood" checked>
+              <label class="form__label" for="positive-mood">Скорее положительное</label>
+            </li>
+            <li class="form-mood__item">
+              <input class="form__radio-input" type="radio" name="mood" value="negative" id="negative-mood">
+              <label class="form__label" for="negative-mood">Скорее отрицательное</label>
+            </li>
+            <li class="form-mood__item">
+              <input class="form__radio-input" type="radio" name="mood" value="undecided" id="undecided">
+              <label class="form__label" for="undecided">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form">
+          <legend class="form__legend">Посещенные достопримечательности:</legend>
+          <ul class="form-place__list">
+            <li class="form-place__item">
+              <input class="form__checkbox-input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+              <legend class="form__label" for="devil-bridge">Мост Дьявола</legend>
+            </li>
+            <li class="form-place__item">
+              <input class="form__checkbox-input" type="checkbox" name="bell-cliff" id="bell-cliff" checked>
+              <legend class="form__label" for="bell-cliff">Гора-Колокол</legend>
+            </li>
+            <li class="form-place__item">
+              <input class="form__checkbox-input" type="checkbox" name="Slide-park" id="Slide-park" checked>
+              <legend class="form__label" for="Slide-park">Слайд-парк</legend>
+            </li>
+            <li class="form-place__item">
+              <input class="form__checkbox-input" type="checkbox" name="red-cliffs" id="red-cliffs">
+              <legend class="form__label" for="red-cliffs">Красные скалы</legend>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Опишите свои эмоции:</legend>
+          <textarea class="form-message" name="form-message" id="form-message" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="button button__form-submit" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <a href="#">#visitsedona</a>
+    <ul class="footer-socials__list">
+      <li class="footer-socials__item">
+         <a href="#">Твиттер</a>
+      </li>
+      <li class="footer-socials__item">
+        <a href="#">Фейсбук</a>
+      </li>
+      <li class="footer-socials__item">
+        <a href="#">Ютьюб</a>
+      </li>
+    </ul>
+    <div class="footer__developed">
+      <a href="#">Разбработано</p>
+    </div>
+  </footer>
+
+</body>
+</html>
