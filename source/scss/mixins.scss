@@ -1,0 +1,50 @@
+@mixin outline {
+  outline: 2px solid black;
+}
+
+@mixin list-default {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin link-default {
+  text-decoration: none;
+  background-color: none;
+  color: $black;
+  margin: 0;
+  padding: 0;
+  display: block;
+
+}
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin max-width {
+  width: 100%;
+}
+
+@mixin max-height {
+  height: 100%;
+}
+
+@mixin hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@mixin poz-reset {
+  padding: 0;
+  margin: 0;
+}

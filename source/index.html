@@ -3,32 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>Добро пожаловать в Седону!</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body class="page__body">
 
     <header class="page-header">
-      <a class="page-header__logo" href="#">
+      <div class="menu-container">
+        <a class="page-header__logo" href="#">
         <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="City of Sedona">
       </a>
+      <button type="button" class="button site-list--toggle">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve" fill="#81B3D2">
+          <g>
+            <rect width="22.928" height="3.964"/>
+            <rect y="9.009" width="22.928" height="3.964"/>
+            <rect y="18.018" width="22.928" height="3.964"/>
+          </g>
+        </svg>
+      </button>
+      </div>
       <nav class="nav-main">
         <ul class="nav-main__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__item--link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="gallery.html">Фото и Видео</a>
+            <a class="site-list__item--link" href="gallery.html">Фото и Видео</a>
           </li>
           <li class="site-list__item">
-            <a href="review.html">Форма отзыва</a>
+            <a class="site-list__item--link" href="review.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__item--link" href="#">HTML Academy</a>
           </li>
         </ul>
+        <div class="shadow"></div>
+        <button type="button" class="button site-list--close"></button>
       </nav>
-      <button type="button" class="button site-list--toggle"></button>
-      <button type="button" class="button site-list--close"></button>
+    </header>
 
+    <main class="page-main">
+      <h1 class="visually-hidden">Welcome to "Sedona"</h1>
       <section class="welcoming">
         <div class="welcoming__gorgeous">
           <img src="img/welcome-gorgeous.svg" width="157.05" height="51.72" alt="Welcome to the gorgeous">
@@ -40,22 +59,20 @@
           <img src="img/slogan.svg" width="180" height="48.5" alt="Because the Grand Canyon sucks!">
         </div>
       </section>
-
-    </header>
-
-    <main class="page-main">
-      <h1 class="visually-hidden">Welcome to "Sedona"</h1>
       <section class="description">
         <h2 class="visually-hidden">Описание</h2>
         <h3 class="heading description__title">
-        Седона - небольшой <br>
+        Седона &#8212 небольшой <br>
         городок в Аризоне,<br>
         заслуживающий большего!
       </h3>
-        <p class="descrpition__info">
+        <p class="description__info">
           Рассмотрим 5 причин, по которым<br>
           Седона круче, чем Гранд Каньон!
         </p>
+      </section>
+
+      <section class="proba">
       </section>
 
       <section class="advantages">
@@ -66,7 +83,7 @@
               Настоящий городок
             </h3>
             <p class="advantages__numeration"><span>&#8470</span>1</p>
-            <p>Седона не аттракцион для туристов, там <br>
+            <p class="real-city__info">Седона не аттракцион для туристов, там <br>
              течет своя жизнь
             </p>
           </div>
@@ -76,13 +93,14 @@
           <dl class="real-city__list">
             <div class="real-city__item">
               <dt class="heading real-city__title">
-                Жильё
+                Жилье
               </dt>
               <dd class="real-city__description">
                 Рекомендуем пожить в<br>
                 настоящем мотеле, все как в<br>
                 кино!
               </dd>
+              <img class="advantages__icon" src="img/icon-house.svg" width="39px" height="37px">
             </div>
             <div class="real-city__item">
               <dt class="heading real-city__title">
@@ -92,6 +110,7 @@
                 Не только китайского, но и<br>
                 местного производства!
               </dd>
+              <img class="advantages__icon" src="img/icon-gift.svg" width="38px" height="38px">
             </div>
             <div class="real-city__item">
               <dt class="heading real-city__title">
@@ -102,24 +121,25 @@
                 фирменный бургер, вы не<br>
                 разочаруетесь!
               </dd>
+              <img class="advantages__icon" src="img/icon-burger.svg" width="40px" height="35px">
             </div>
           </dl>
         </div>
         <div class="advantages__single advantages__bridge">
-          <div class="advantages__single__container">
+          <div class="advantages__single__container devil-bridge">
             <h3 class="heading devil-bridge__heading">
               Там есть мост дьявола
             </h3>
             <p class="advantages__numeration">
               <span>&#8470</span>2
             </p>
-            <p>
+            <p class="devil-bridge__info">
               Да, по нему можно пройти! Если вы<br>
               осмелитесь, конечно
             </p>
           </div>
-          <div>
-            <img src="img/main-bridge-mobile@1x.jpg" width="318" height="260" alt="Devil's bridge">
+          <div class="advantages__devil-bridge">
+            <img class="advantages__devil-bridge--size" src="img/main-bridge-mobile@1x.jpg" width="318" height="260" alt="Devil's bridge">
           </div>
         </div>
         <div class="advantages__single other-advantages">
@@ -130,10 +150,11 @@
             <p class="advantages__numeration">
               <span>&#8470</span>3
             </p>
-            <p class="square__description">
+            <p class="other-advantages__description">
               Все интересные места находятся<br>
               очень близко
             </p>
+            <div class="crossing-line"></div>
           </div>
           <div class="advantages__road">
             <h3 class="heading road__title">
@@ -142,10 +163,11 @@
             <p class="advantages__numeration">
               <span>&#8470</span>4
             </p>
-            <p class="road__description">
+            <p class="other-advantages__description">
               Ехать в Седону из Лас-Вегаса<br>
               совсем не скучно!
             </p>
+            <div class="crossing-line"></div>
           </div>
           <div class="advantages__tourists">
             <h3 class="heading tourists__title">
@@ -154,7 +176,7 @@
             <p class="advantages__numeration">
               <span>&#8470</span>5
             </p>
-            <p class="tourists__description">
+            <p class="other-advantages__description">
               Большинство едет в Гранд Каньон<br>
               и толпится там
             </p>
@@ -163,7 +185,7 @@
       </section>
 
       <section class="booking">
-        <h2 class="visally-hidden">Заказать номер</h2>
+        <h2 class="visually-hidden">Заказать номер</h2>
         <h3 class="heading booking__heading">
           Заинтересовались?
         </h3>
@@ -176,25 +198,49 @@
       </section>
 
       <section class="map">
-        <img src="img/bg-map-mobile@1x.jpg" width="320px" height="350px" alt="Где находится Седона">
+        <a class="map__picture">
+          <img src="img/bg-map-mobile@1x.jpg" width="320px" height="350px" alt="Где находится Седона">
+          <div class="map--position"></div>
+        </a>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a href="#">#visitsedona</a>
+      <a class="hashtag" href="#">#visitsedona</a>
       <ul class="footer-socials__list">
         <li class="footer-socials__item">
-           <a href="#">Твиттер</a>
+           <a class="link socials__link" href="#">
+            <svg class="twitter-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"
+                  fill="white"/>
+                </g>
+              </g>
+            </svg>
+           </a>
         </li>
         <li class="footer-socials__item">
-          <a href="#">Фейсбук</a>
+          <a class="link socials__link" href="#">
+            <svg class="facebook-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+              <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" fill="white"/>
+            </svg>
+          </a>
         </li>
         <li class="footer-socials__item">
-          <a href="#">Ютьюб</a>
+          <a class="link socials__link facebook" href="#">
+            <svg class="youtube-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+              <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" fill="white"/>
+            </svg>
+          </a>
         </li>
       </ul>
       <div class="footer__developed">
-        <a href="#">Разбработано</p>
+        <a class="link" href="#">Разбработано
+          <svg class="html-academy" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>

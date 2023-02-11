@@ -1,0 +1,67 @@
+header {
+  @include flex;
+}
+
+.nav-main {
+  order: 1;
+  @include max-width;
+  height: min-content;
+  background-color: $mainColor;
+  position: relative;
+}
+
+.menu-container {
+  order: 2;
+  @include max-width;
+  position: relative;
+  height: 56px;
+}
+
+.site-list--toggle {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  width: 23px;
+  height: 22px;
+}
+
+.site-list--close {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+}
+
+.site-list {
+  @include list-default;
+  @include max-height;
+}
+
+.site-list__item {
+  @include max-width;
+  height: 55px;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.shadow {
+  position: absolute;
+  bottom: 0;
+  height: 7px;
+  @include max-width;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  mix-blend-mode: normal;
+}
+
+.site-list__item--link {
+  @include link-default;
+  @include max-width;
+  @include max-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $biggerFont;
+  line-height: 40px;
+  color: $white;
+  font-weight: $thickFont;
+}

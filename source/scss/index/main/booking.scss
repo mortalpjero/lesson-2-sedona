@@ -1,0 +1,26 @@
+.booking {
+  padding-top: 33px;
+  padding-bottom: 66.5px;
+}
+
+.booking__heading {
+  font-size: 21px;
+}
+
+.booking__description {
+  @include poz-reset;
+  margin-top: 20px;
+  line-height: 24px;
+  color: $lightBlack;
+  margin-bottom: 45px;
+}
+
+.booking__link {
+  padding: 0 46px;
+  padding-top: 14.5px;
+  padding-bottom: 17.5px;
+  font-weight: $thickFont;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 26px;
+}

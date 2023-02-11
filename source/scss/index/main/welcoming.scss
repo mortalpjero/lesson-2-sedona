@@ -1,0 +1,30 @@
+.welcoming {
+  background-image:url(../img/background-vector--left.svg), url(../img/background-vector--right.svg), url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  height: 389px;
+  background-position-x: -440px, 160px, 50%;
+  background-position-y: 100%, 100%, 50%;
+  justify-content: flex-start;
+  @include flex;
+  flex-direction: column;
+  @include poz-reset;
+}
+
+.welcoming__gorgeous {
+  height: min-content;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+
+.welcoming__logo {
+  margin-top: 0;
+  height: min-content;
+  margin-top: 28px;
+}
+
+.welcoming__slogan {
+  height: min-content;
+  margin-top: 30px;
+  align-self: center;
+  margin-left: -12px;
+}

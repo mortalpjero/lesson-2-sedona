@@ -1,0 +1,118 @@
+.advantages {
+  @include poz-reset;
+  margin-top: 30px;
+}
+
+.advantages__title {
+  @include poz-reset
+}
+
+.advantages__single {
+  @include poz-reset
+}
+
+.advantages__single__container {
+  background-color: $mainColor;
+  color: $white;
+  padding-top: 55px;
+  padding-bottom: 39px;
+}
+
+.advantages__numeration {
+  @include poz-reset;
+  margin-top: 20px;
+  line-height: 15px;
+}
+
+.real-city__heading {
+  @include poz-reset;
+  font-size: $biggerFont;
+  line-height: 10px;
+}
+
+.real-city__info {
+  @include poz-reset;
+  margin-top: 15px;
+  font-size: $smallerFont;
+  line-height: 26px;
+}
+
+.real-city__list {
+  @include poz-reset;
+  text-align: start;
+  padding-left: 69px;
+  margin-top: 35px;
+  padding-bottom: 35px;
+}
+
+.real-city__item {
+  position: relative;
+  @include poz-reset;
+  margin-top: 26px;
+}
+
+.real-city__title {
+  font-size: 18px;
+}
+
+.real-city__description {
+  @include poz-reset;
+  margin-top: 18px;
+  color: $lightBlack;
+  line-height: 21px;
+}
+
+.advantages__icon {
+  position: absolute;
+  left: -52px;
+  top: -10px;
+}
+
+.devil-bridge {
+  padding-top: 39px;
+  padding-bottom: 35px;
+}
+
+.advantages__devil-bridge {
+  @include poz-reset;
+}
+
+.advantages__devil-bridge--size {
+  @include poz-reset;
+  width: 100%;
+}
+
+.other-advantages {
+  @include poz-reset;
+  background-color: $lightGray;
+  margin-top: -3px;
+  padding-bottom: 1px;
+  padding-top: 26px;
+}
+
+.crossing-line {
+  width: 87.5%;
+  height: 1px;
+  background-color: $crossingLine;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.other-advantages__description {
+  @include poz-reset;
+  margin-top: 18px;
+  margin-bottom: 24px;
+  color: $lightBlack;
+  line-height: 21px;
+}
+
+.tourists__title,
+.road__title {
+  margin-top: 26px;
+}
+
+.devil-bridge__info {
+  @include poz-reset;
+  line-height: 21px;
+  margin-top: 20px;
+}

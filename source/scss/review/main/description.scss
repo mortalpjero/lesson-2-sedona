@@ -1,0 +1,21 @@
+.review__description {
+  margin-top: 36px;
+}
+
+.review__description .heading {
+  font-size: $biggerFont;
+}
+
+.review__description .crossing-line {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.review__info {
+  font-size: $smallerFont;
+  line-height: 24px;
+  color: $lightBlack;
+  @include poz-reset;
+  margin-top: 30px;
+}
+
