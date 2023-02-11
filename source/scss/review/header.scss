@@ -1,0 +1,12 @@
+.review__welcoming {
+  background-image: url("../img/back-desktop.jpg");
+  background-color: $mainColor;
+  width: 320px;
+  height: 158px;
+  order: 2;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  @include flex;
+  justify-content: center;
+  align-items: center;
+}

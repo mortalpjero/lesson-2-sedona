@@ -1,0 +1,102 @@
+.gallery__title {
+  @include poz-reset;
+}
+
+.gallery__title .crossing-line,
+.gallery .crossing-line {
+  width: 100%;
+  @include poz-reset;
+}
+
+.gallery__heading {
+  font-size: $biggerFont;
+  line-height: 26px;
+  @include poz-reset;
+  margin-top: 30px;
+}
+
+.gallery__description {
+  @include poz-reset;
+  margin-top: 30px;
+  line-height: 26px;
+  color: $lightBlack;
+  margin-bottom: 35px;
+}
+
+.gallery {
+  @include poz-reset;
+}
+
+.img-figure {
+  @include poz-reset;
+  padding-top: 22px;
+  padding-bottom: 15px;
+}
+
+.figure__caption {
+  @include poz-reset;
+  text-align: left;
+  margin-left: 20px;
+  font-size:  14px;
+  font-weight: $thickFont;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+.figure__author {
+  @include poz-reset;
+  display: block;
+  margin-top: 7px;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 14px;
+  text-transform: initial;
+  color: $lightBlack;
+}
+
+.like-count {
+  @include poz-reset;
+  display: block;
+  text-align: left;
+  margin-left: 57px;
+  margin-top: 13px;
+  font-weight: $thickFont;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.like-count__icon {
+  position: absolute;
+  opacity: 0.3;
+  top: -5px;
+  left: -37px;
+}
+
+.video-figure {
+  @include poz-reset;
+  margin-bottom: 49px;
+}
+
+.video {
+  @include poz-reset;
+}
+
+.video__title {
+  @include poz-reset;
+  margin-top: 32px;
+}
+
+.video__caption {
+  @include poz-reset;
+  margin-top: 35px;
+  line-height: 26px;
+  color: $lightBlack;
+}
+
+.video-file {
+  @include poz-reset;
+  margin-top: 33px;
+  width: max-content;
+}

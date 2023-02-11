@@ -1,0 +1,259 @@
+.review__form {
+  @include poz-reset;
+}
+
+.form {
+  border: none;
+  text-align: start;
+  @include poz-reset;
+  margin-top: 20px;
+  height: min-content;
+}
+
+.form__legend {
+  font-weight: $thickFont;
+  font-size: $biggerFont;
+  text-align: center;
+  @include poz-reset;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  font-weight: $thinFont;
+  font-size: 14px;
+  line-height: 26px;
+  color: $lightBlack;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+.form__list {
+  @include poz-reset;
+  list-style: none;
+  display: grid;
+  row-gap: 20px;
+}
+
+.form-info__item {
+  display: flex;
+}
+
+.form__input {
+  font-size: $biggerFont;
+  font-weight: $thickFont;
+  color: $black;
+}
+
+.form__input::placeholder {
+  color: black;
+}
+
+.form-info__list {
+  margin-left: 6.25%;
+}
+
+.form__text-input,
+.form__email-input,
+.form__phone-input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+  background-color: $formColor;
+  border: none;
+  padding-left: 22px;
+}
+
+.form-info__list .form__item{
+height: 58px;
+align-items: center;
+}
+
+.form-contacts__list {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: max-content;
+}
+
+.form-contacts__list li{
+  @include flex;
+  height: max-content;
+  position: relative;
+}
+
+.input-icon__container {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: $fomDarkColor;
+  top: 31px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__phone-input,
+.form__email-input {
+  height: 56px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.form-contacts__list .form__label {
+  margin-left: 42px;
+}
+
+.first-form,
+.second-form {
+  margin-bottom: 25px;
+}
+
+.third-form {
+  margin-bottom: 41px;
+}
+
+.fourth-form {
+  margin-bottom: 39px;
+}
+
+.third-form .form__legend {
+  margin-bottom: 35px;
+}
+
+form .crossing-line {
+  @include poz-reset;
+  width: 100%;
+}
+
+.form-mood__list {
+  @include poz-reset;
+  gap: 43px;
+}
+
+.form-mood__item {
+  position: relative;
+  @include poz-reset;
+}
+
+.third-form .form__label {
+  text-transform: initial;
+  font-size: $biggerFont;
+  font-weight: $thickFont;
+  color: $black;
+  @include poz-reset;
+  margin-left: 98px;
+  position: relative;
+}
+
+.third-form .form__label::before {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: $formColor;
+  left: -78px;
+  top: -18px;
+  border-radius: 50%;
+}
+
+.form__radio-input:checked + .form__label::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: $lightBlack;
+  border-radius: 50%;
+  position: absolute;
+  left: -60px;
+  top: 0;
+}
+
+.fourth-form .form__legend {
+  margin-bottom: 30px;
+}
+
+.form-place__item {
+  @include flex;
+}
+
+.form-place__list {
+  gap: 50px;
+}
+
+.form-place__item .form__label{
+  font-size: $biggerFont;
+  font-weight: $thickFont;
+  color: $black;
+  text-transform: initial;
+  display: block;
+  margin-left: 98px;
+  position: relative;
+  cursor: pointer;
+}
+
+.form__checkbox-input + .form__label::before{
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 56px;
+  background-color: $formColor;
+  border-radius: 10%;
+  top: -14px;
+  left: -78px;
+}
+
+.form__checkbox-input:checked + .form__label::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-tick.svg");
+  width: 56px;
+  height: 56px;
+  left: -61px;
+  top: 6px;;
+  background-repeat: no-repeat;
+}
+
+.fifth-form .form__legend {
+  margin-bottom: 15px;
+}
+
+.fifth-form{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.form-message {
+  border: none;
+  background-color: $formColor;
+  width: 100%;
+  height: 160px;
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  color: $black;
+  font-weight: $thickFont;
+  font-size: $biggerFont;
+}
+
+.form-message::placeholder {
+  color: $black;
+  font-weight: $thickFont;
+  font-size: $biggerFont;
+}
+
+.button__form-submit {
+  border: none;
+  width: 86.5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58px;
+  font-size: 21px;
+  font-weight: $thickFont;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}

@@ -1,0 +1,16 @@
+.map__picture {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.map--position {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: $mainColor;
+  left: 46%;
+  top: 46%;
+  border-radius: 50%;
+  border: 5px solid $white;
+}
