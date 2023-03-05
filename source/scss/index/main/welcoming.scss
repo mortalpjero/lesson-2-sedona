@@ -1,0 +1,131 @@
+.welcoming-description-wrapper {
+  background-color: $white;
+}
+
+.welcoming {
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 389px;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  justify-content: flex-start;
+  @include flex;
+  flex-direction: column;
+  @include poz-reset;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-size: cover;
+  }
+}
+
+.welcoming__gorgeous {
+  height: min-content;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+
+.welcoming__gorgeous svg {
+  width: 158px;
+  height: 52px;
+}
+
+.welcoming__logo {
+  margin-top: 0;
+  height: min-content;
+  margin-top: 28px;
+}
+
+.welcoming__logo svg {
+  width: 282px;
+  height: 48.8px;
+}
+
+.welcoming__slogan {
+  height: min-content;
+  margin-top: 30px;
+  align-self: center;
+  margin-left: -12px;
+}
+
+.welcoming__slogan svg {
+  width: 180.31px;
+  height: 48.5px;
+}
+
+.vector--left {
+  position: absolute;
+  z-index: 10;
+  bottom: -3px;
+  right: 50%;
+}
+
+.vector--right {
+  position: absolute;
+  z-index: 10;
+  bottom: -3px;
+  left: 50%;
+}
+
+@media screen and (min-width: $midScreen) {
+
+  .welcoming {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+    }
+
+  }
+
+  .welcoming__gorgeous {
+    margin-top: 66px;
+    height: min-content;
+  }
+
+  .welcoming__gorgeous svg {
+    width: 283px;
+    height: 99px;
+    @include poz-reset;
+  }
+
+  .welcoming__logo {
+    margin-top: 39px;
+  }
+
+  .welcoming__logo svg {
+    width: 498px;
+    height: 98px;
+  }
+
+  .welcoming__slogan {
+    margin-top: 41px;
+  }
+
+  .welcoming__slogan svg {
+    width: 335px;
+    height: 99px;
+  }
+
+  .vector--left,
+  .vector--right {
+    bottom: -4px;
+  }
+}
+
+@media screen and (min-width: $pcScreen) {
+
+  .welcoming {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+    }
+
+  }
+}

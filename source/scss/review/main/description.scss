@@ -1,0 +1,46 @@
+.review__description {
+  margin-top: 36px;
+}
+
+.review__description .heading {
+  font-size: $biggerFont;
+}
+
+.review__description .crossing-line {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.review__info {
+  font-size: $smallerFont;
+  line-height: 24px;
+  color: $lightBlack;
+  @include poz-reset;
+  margin-top: 30px;
+  @include center;
+  max-width: 275px;
+}
+
+@media screen and (min-width: $midScreen) {
+  .review__description {
+    margin-top: 64px;
+  }
+
+  .review__description .heading {
+    font-size: 30px;
+  }
+
+  .review__info {
+    max-width: 445px;
+  }
+
+  .review__description .crossing-line {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $pcScreen) {
+  .review__description {
+    margin-top: 114px;
+  }
+}

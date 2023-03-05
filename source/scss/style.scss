@@ -1,0 +1,16 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "body.scss";
+@import "index/header.scss";
+@import "index/main/welcoming.scss";
+@import "index/main/description.scss";
+@import "index/main/advantages.scss";
+@import "index/main/booking.scss";
+@import "index/main/map.scss";
+@import "index/footer.scss";
+
+@import "review/header.scss";
+@import "review/main/description.scss";
+@import "review/main/form.scss";
+
+@import "gallery/main/title.scss"

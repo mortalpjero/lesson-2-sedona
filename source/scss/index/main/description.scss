@@ -1,0 +1,45 @@
+.description {
+  @include poz-reset;
+  margin-top: 32px;
+}
+
+.description__title {
+  font-weight: 700;
+  line-height: 26px;
+  @include poz-reset;
+  font-size: $biggerFont;
+  max-width: 270px;
+  @include center;
+}
+
+.description__info {
+  @include poz-reset;
+  font-weight: $thinFont;
+  font-size: $smallerFont;
+  line-height: 26px;
+  margin-top: 30px;
+  color: $lightBlack;
+  max-width: 270px;
+  @include center;
+}
+
+@media screen and (min-width: $midScreen) {
+  .description {
+    margin-top: 43.5px;
+  }
+
+  .description__title {
+    font-size: 21px;
+    max-width: 450px;
+  }
+
+  .description__info {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: $pcScreen) {
+  .description {
+    margin-top: 55px;
+  }
+}

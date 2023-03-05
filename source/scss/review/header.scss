@@ -1,0 +1,86 @@
+.review__welcoming {
+  background-color: transparent;
+  height: 158px;
+  background-repeat: no-repeat;
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @include center;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: 50% 90%;
+  background-size: 768px 518px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+  }
+
+}
+
+.vector__special--left {
+  position: absolute;
+  width: 600px;
+  height: 57px;
+  bottom: -3px;
+  right: 46.5%;
+}
+
+.vector__special--right {
+  position: absolute;
+  width: 600px;
+  height: 57px;
+  bottom: -3px;
+  left: 46.5%;
+}
+
+.review__welcoming-wrapper {
+  order: 2;
+  }
+
+.text-sedona__svg {
+  height: 39px;
+  width: 229px;
+}
+
+@media screen and (min-width: $midScreen) {
+
+.text-sedona__svg {
+  height: 77.6px;
+  width: 456.9px;
+}
+
+.vector__special--left {
+  right: 50%;
+  bottom: 0;
+}
+
+.vector__special--right {
+  left: 50%;
+  bottom: 0;
+}
+
+.review__welcoming {
+  background-image: url(../img/bg-back-tablet@1x.jpg);
+  height: 290px;
+  width: 1200;
+  background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-back-tablet@2x.jpg);
+  }
+}
+
+
+
+}
+
+@media screen and (min-width: $pcScreen) {
+  .review__welcoming {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+    }
+}
+}
