@@ -48,3 +48,8 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}

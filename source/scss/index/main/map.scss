@@ -1,7 +1,19 @@
+.map-wrapper {
+  background-color:$lightGray;
+}
+
 .map__picture {
   position: relative;
   display: block;
   cursor: pointer;
+}
+
+.map__picture img {
+  display: block;
+  @include center;
+  width: 1280px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .map--position {
@@ -9,8 +21,25 @@
   width: 17px;
   height: 17px;
   background-color: $mainColor;
-  left: 46%;
-  top: 46%;
+  left: 49%;
+  top: 48%;
   border-radius: 50%;
   border: 5px solid $white;
+}
+
+.map__iframe {
+  position: fixed;
+  bottom: 60px;
+  width: 320px;
+  background-size: cover;
+  overflow: hidden;
+  margin-left: -160px;
+  left: 50%;
+}
+
+@media screen and (min-width: $midScreen) {
+  .map__iframe {
+    width: 560px;
+    margin-left: -280px;
+  }
 }

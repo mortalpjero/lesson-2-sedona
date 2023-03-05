@@ -16,6 +16,20 @@
   color: $white;
   padding-top: 55px;
   padding-bottom: 39px;
+  position: relative;
+  overflow: hidden;
+}
+
+.vector__triangle--left {
+  position: absolute;
+  top: -15px;
+  right: 50%;
+}
+
+.vector__triangle--right {
+  position: absolute;
+  top: -15px;
+  left: 50%;
 }
 
 .advantages__numeration {
@@ -35,6 +49,8 @@
   margin-top: 15px;
   font-size: $smallerFont;
   line-height: 26px;
+  max-width: 295px;
+  @include center;
 }
 
 .real-city__list {
@@ -43,6 +59,8 @@
   padding-left: 69px;
   margin-top: 35px;
   padding-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .real-city__item {
@@ -60,12 +78,39 @@
   margin-top: 18px;
   color: $lightBlack;
   line-height: 21px;
+  max-width: 210px;
+}
+
+.real-city__picture img {
+  width: 550px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages__icon {
   position: absolute;
   left: -52px;
   top: -10px;
+  fill: $mainColor;
+}
+
+.icon-house {
+  width: 39px;
+  height: 37px;
+}
+
+.icon-gift {
+  width: 32px;
+  height: 38px;
+}
+
+.icon-burger {
+  width: 40px;
+  height: 35px;
+}
+
+.second-advantage-wrapper {
+  background-color: $mainColor;
 }
 
 .devil-bridge {
@@ -75,19 +120,34 @@
 
 .advantages__devil-bridge {
   @include poz-reset;
+  background-color: $white;
+}
+
+.advantages__devil-bridge img {
+  width: 550px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages__devil-bridge--size {
   @include poz-reset;
-  width: 100%;
+  display: block;
+  @include center;
+}
+
+.other-advantages-wrapper {
+  background-color: $lightGray;
 }
 
 .other-advantages {
   @include poz-reset;
   background-color: $lightGray;
-  margin-top: -3px;
   padding-bottom: 1px;
   padding-top: 26px;
+}
+
+.other-advantages__item:not(:first-child) {
+  padding-top: 25px;
 }
 
 .crossing-line {
@@ -104,6 +164,8 @@
   margin-bottom: 24px;
   color: $lightBlack;
   line-height: 21px;
+  max-width: 250px;
+  @include center;
 }
 
 .tourists__title,
@@ -115,4 +177,264 @@
   @include poz-reset;
   line-height: 21px;
   margin-top: 20px;
+  max-width: 289px;
+  @include center;
+}
+
+.pc-screen-break {
+  display: none;
+}
+
+@media screen and (min-width: $midScreen) {
+
+  .advantages {
+    margin-top: 52.5px;
+  }
+  .advantages__real-city {
+    @include flex;
+    height: max-content;
+  }
+  .advantages__single__container {
+    width: 33%;
+    padding: 0;
+    height: 256px;
+    box-sizing: border-box;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .real-city__heading {
+    @include poz-reset;
+    font-style: 21px;
+    max-width: 130px;
+    line-height: 26px;
+    @include center;
+  }
+
+  .advantages__numeration {
+    margin-top: 25px;
+
+  }
+  .real-city__info {
+    @include poz-reset;
+    margin-top: 15px;
+    @include center;
+  }
+
+  .real-city__picture {
+    width: 67%;
+    padding: 0;
+    @include flex;
+    justify-content: center;
+    max-height: 256px;
+    overflow: hidden;
+  }
+
+  .real-city__picture img {
+    width: 820px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .real-city__list {
+    @include flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 158px;
+  }
+
+  .real-city__item {
+    width: 33%;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .real-city__title {
+    height: min-content;
+    width: min-content;
+    @include center;
+    font-size: 21px;
+  }
+
+  .real-city__description {
+    height: min-content;
+    @include center;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .housing {
+    max-width: 185px;
+  }
+
+  .icon-house {
+    width: 75px;
+    height: 72px;
+  }
+
+  .food {
+    max-width: 155px;
+    line-height: 21px;
+  }
+
+  .icon-burger {
+    width: 76px;
+    height: 68px;
+  }
+
+  .souvenir {
+    max-width: 195px;
+  }
+
+  .icon-gift {
+    width: 64px;
+    height: 75px;
+  }
+
+  .souvenir__item {
+    order: 1;
+  }
+
+  .second-advantage-wrapper {
+    margin-top: 60px;
+  }
+
+  .advantages__icon {
+    top: -100px;
+    left: 40%;
+  }
+
+  .advantages__bridge {
+
+    display: flex;
+  }
+
+  .advantages__devil-bridge {
+    width: 67%;
+  }
+
+  .devil-bridge {
+    order: 1;
+  }
+
+  .advantages__devil-bridge img {
+    width: 820px;
+    height: 256px;
+  }
+
+  .devil-bridge__heading {
+    @include poz-reset;
+    font-style: 21px;
+    max-width: 130px;
+    line-height: 26px;
+    @include center;
+  }
+
+  .devil-bridge__info {
+    max-width: 180px;
+  }
+
+  .other-advantages {
+    @include flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .other-advantages .crossing-line {
+    display: none;
+  }
+
+  .other-advantages__item{
+    width: 33%;
+    @include flex;
+    flex-direction: column;
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+  .other-advantages__item:not(:first-child) {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+
+  .other-advantages__title {
+    font-size: 21px;
+    max-width: 120px;
+    @include center;
+  }
+
+  .other-advantages__description {
+    margin-bottom: 0;
+    margin-top: 31px;
+  }
+
+  .square-description {
+    max-width: 200px;
+  }
+
+  .road-description {
+    max-width: 150px;
+  }
+
+  .tourists-description {
+    max-width: 150px;
+
+  }
+
+  .vector__triangle--left,
+  .vector__triangle--right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $pcScreen) {
+  .advantages__single__container {
+    height: 256px;
+  }
+   .real-city__info {
+    max-width: 290px;
+  }
+
+  .real-city__picture img {
+    width: 820px;
+    height: 256px;
+  }
+
+  .housing {
+    max-width: 275px;
+  }
+
+  .food {
+    max-width: 300px;
+  }
+
+  .pc-screen-break {
+    display: block;
+  }
+
+  .souvenir {
+    max-width: 220px;
+  }
+
+  .devil-bridge__info {
+    max-width: 230px;
+  }
+
+  .square-description {
+    max-width: 300px;
+  }
+
+  .road-description {
+    max-width: 280px;
+  }
+
+  .tourists-description {
+    max-width: 280px;
+  }
+
+  .advantages__devil-bridge img {
+    width: 820px;
+    height: 256px;
+    object-position: 0 -15px;
+  }
+
 }

@@ -1,8 +1,10 @@
-.page-footer{
+.page-footer {
   padding-top: 28.5px;
   padding-bottom: 26px;
-  display: flex;
-  flex-wrap: wrap;
+}
+
+.page-footer__container {
+  @include flex;
   flex-direction: column;
 }
 
@@ -37,18 +39,84 @@
   align-items: center;
 }
 
+.twitter-logo {
+  width: 17.5px;
+  height: 15px;
+  fill: $white;
+}
+
+.facebook-logo {
+  width: 9px;
+  height: 19px;
+  fill: $white;
+}
+
+.youtube-logo {
+  width: 20px;
+  height: 14px;
+  fill: $white;
+}
+
 .footer__developed {
   margin-top: 42px;
 }
 
-.footer__developed .link {
+.footer__developed .link-htmlacademy {
   color: $black;
   display: flex;
   background-color: transparent;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+
+.link-htmlacademy:hover svg {
+  fill: $mainColor;
+}
+
+.link-htmlacademy:active svg {
+  opacity: 0.3;
 }
 
 .html-academy {
   margin-left: 13px;
+  width: 27px;
+  height: 34.1px;
+  fill: $black;
+}
+
+@media screen and (min-width: $midScreen) {
+  .page-footer__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hashtag__container {
+    width: 33%;
+    @include flex;
+    justify-content: center;
+  }
+
+  .hashtag {
+    display: block;
+    width: min-content;
+  }
+
+  .footer-socials__list {
+    @include poz-reset;
+    width: 33%;
+  }
+
+  .footer__developed .link {
+    @include poz-reset;
+    width: max-content;
+  }
+
+  .footer__developed {
+    @include poz-reset;
+    width: 33%;
+    @include flex;
+    justify-content: center;
+  }
 }

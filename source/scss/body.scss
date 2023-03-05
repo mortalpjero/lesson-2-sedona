@@ -1,7 +1,6 @@
 body {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  @include poz-reset;
+  min-width: 320px;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
   font-size: $smallerFont;
@@ -9,14 +8,48 @@ body {
   text-transform: uppercase;
 }
 
+body,
+html {
+  min-height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   @include hidden;
+}
+
+.nav__visually-hidden {
+  display: none;
+}
+
+.nav__shown {
+  display: block;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .heading {
   @include poz-reset;
   font-size: $biggerFont;
   font-weight: $thickFont;
+}
+
+.page-main {
+  flex-grow: 1;
 }
 
 .link {
@@ -62,4 +95,48 @@ body {
 
 .site-list--close::after {
   transform: rotate(-45deg);
+}
+
+
+
+@media screen and (min-width: $midScreen) {
+  body {
+    min-width: 768px;
+  }
+  .container {
+    min-width: 768px;
+    max-width: 1200px;
+  }
+
+  .nav__visually-hidden {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $pcScreen) {
+  body {
+    min-width: 1200px;
+  }
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.likes path {
+  fill: inherit;
+}
+
+.link:hover {
+  background-color: #669EC0;
+}
+
+.link:active {
+  background-color: #5496BD;
+  color: rgba(225,225,225, 0.3);
+}
+
+.link:active svg {
+  fill:rgba(225,225,225, 0.3);
 }
